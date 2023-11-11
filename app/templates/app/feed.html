@@ -1,0 +1,145 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<div class="container text-center" style="max-width: 1400px">
+    <div class="row align-items-start">
+
+        <div class="col-3">
+            <button type="button" class="btn btn-outline-primary">Upload Recipe</button>
+            <hr>
+            <ul class="menu_izquierdo" id="main-menu-list">
+                <li>
+                    <a href="#" data-enabled="false">
+                        <img src="/images/lastrecipes.png" width="30" height="30" loading="lazy" alt="upload meme icon">
+                        Last Recipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-enabled="false">
+                        <img src="/images/toprecipes.png" width="30" height="30" loading="lazy" alt="upload meme icon">
+                        Top Recipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-enabled="false">
+                        <img src="/images/randomrecipe.png" width="30" height="30" loading="lazy" alt="upload meme icon">
+                        Random Recipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-enabled="false">
+                        <img src="/images/favoritesrecipes.png" width="30" height="30" loading="lazy" alt="upload meme icon">
+                        Favorites Recipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-enabled="false">
+                        <img src="/images/rankingrecipes.png" width="30" height="30" loading="lazy" alt="upload meme icon">
+                        Ranking Recipes
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <button type="button" class="btn btn-outline-primary">Languaje</button>
+            <br>
+            <br>
+            <!--<img src="/images/recipy_icon.png" alt="50px" width="50px">>-->
+            <br>
+            <a href="#">Contact Us</a> | <a href="#"> About us</a>
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <div class="col">
+            <article id="article-item-1" class="gallery-item contorno" data-type="1" data-item-id="1">
+                <div class="item-aux-container" style="box-sizing: border-box;">
+                    <!--TITULO DE LA RECETA -->
+                    <header class="item-header" data-ts="1" style="background-color: #7ad9b0;">
+                        <h3>
+                            <a class="item-header-title dyn-link" data-title-container="#item-detail-section" href="/DIRECCION DE LA RECEETA" style="color: white;">
+                                Nombre de la receta
+                            </a>
+                        </h3>
+                        <div style="background-color: white;">
+                            Por
+                            <a href="/USUARIO" class="dyn-link" data-title-container="#user-profile-section" rel="author" style="color: black;">
+                                Author
+                            </a>
+                    </header>
+                    <img src="/images/changua.jpg" width="800" height="805" class="img-responsive grey-background" loading="lazy" alt="vvvv">
+                    <!-- AYUDA PARA CONECTAR CON LA BASE DE DATOS
+                    <a href="/RECETA" class="dyn-link" data-title-container="#item-detail-section">
+                        <picture>
+                            <source srcset="DIRECCION IMAGEN" type="image/webp">
+                            <source srcset="DIRECCION IMAGEN" type="image/jpeg">
+                            <img src="DIRECCION IMAGEN" width="896" height="805" class="img-responsive grey-background" loading="lazy" alt="vvvv">
+                        </picture></a>
+                    -->
+                    <br>
+                    <div class="container text-center" style="background-color: white;">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <img src="/images/comments.png" class="item_box">
+                            </div>
+                            <div class="col">
+                                <img src="/images/dislike.jpg" class="item_box">
+                            </div>
+                            <div class="col">
+                                <h3 style="background-color: white;" style="margin-top: 20px;">(%56)</h3>
+                            </div>
+                            <div class="col">
+                                <img src="/images/like.jpg" class="item_box">
+                            </div>
+                            <div class="col">
+                                <img src="/images/share.png" class="item_box">
+                            </div>
+                        </div>
+                    </div>
+
+            </article>
+        </div>
+
+
+
+        <div class="col-3">
+            <section id="recommended-tags-widget">
+                <header>
+                    <h4> Tags Recomendadas</h4>
+                </header>
+                <div class="tags-container">
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Halloween memes">Halloween</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Spiderman 2 memes">Spiderman 2</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Super Mario Wonder memes">Super Mario Wonder</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Octubre memes">Octubre</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Gatos memes">Gatos</a>
+                </div>
+                <hr>
+                <header>
+                    <h4> Trending Recomendadas</h4>
+                </header>
+                <div class="tags-container">
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Halloween memes">Halloween</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Spiderman 2 memes">Spiderman 2</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Super Mario Wonder memes">Super Mario Wonder</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Octubre memes">Octubre</a>
+                    <a class="btn btn-outline-secondary" data-title-container="#tags-gallery-section" href="#" title="Gatos memes">Gatos</a>
+                </div>
+            </section>
+            <hr>
+            <div id="aside-social-links-container">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" id="aside-social-link-instagram">
+                    <img class="img-social" src="/images/instagram.jpg" width="50" height="50" loading="lazy" alt="Instagram icon">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" id="aside-social-link-fb">
+                    <img class="img-social" src="/images/facebook.png" width="50" height="50" loading="lazy" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" id="aside-social-link-twitter">
+                    <img class="img-social" src="/images/x.png" width="50" height="50" loading="lazy" alt="Twitter icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
